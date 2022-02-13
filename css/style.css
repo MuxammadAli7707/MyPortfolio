@@ -531,12 +531,12 @@ span {
   transform: translateY(-50%);
 }
 
-.porfolio__imgs {
+.portfolio__imgs {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.porfolio__img {
+.portfolio__img {
   position: relative;
   transition: all linear 0.4s;
   margin-bottom: 30px;
@@ -549,7 +549,7 @@ span {
   border-radius: 6px;
 }
 
-.porfolio__box {
+.portfolio__box {
   position: absolute;
   top: 50%;
   left: 3%;
@@ -561,7 +561,7 @@ span {
   transition: all linear 0.4s;
   border-radius: 6px;
 }
-.porfolio__img:hover .porfolio__box{
+.portfolio__img:hover .portfolio__box{
   opacity: 1;
   height: 100%;
   transition: all linear 0.4s;
@@ -660,6 +660,10 @@ span {
   line-height: 2rem;
   text-decoration: none;
   margin: 0;
+}
+
+.contact__site:hover {
+  color: #fa163f;
 }
 
 .input__text {
