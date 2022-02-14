@@ -7,14 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MyPortfolio</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="body">
   <section id="hero" class="hero">
-    <header id="particles-js" class="site-hero header">
+    <header class="site-hero header">
       <div class="container">
         <div class="header__banner text-center">
           <p class="header__hello">Hello</p>
@@ -26,18 +27,19 @@
           </div>
           <a href="#about" class="header__scroll-down">
             <div class="header__box box">
-                <span class="header__down"></span>
-                <span class="header__down"></span>
+              <span class="header__down"></span>
+              <span class="header__down"></span>
             </div>
-        </a>
+          </a>
         </div>
       </div>
     </header>
+    <div id="particles-js"></div>
   </section>
-   <!-- CURSOR ANIMATION  -->
+  <!-- CURSOR ANIMATION  -->
 
-   <div class="cursor"></div>
-   <div class="cursor-spot"></div>
+  <div class="cursor"></div>
+  <div class="cursor-spot"></div>
 
   <main>
     <section id="about" class="about">
@@ -50,7 +52,9 @@
             <div class="about__box">
               <h4 class="about__info">I am <span id="job" class="about__job"></span>
               </h4>
-              <p class="about__text">Hi! My name is Abdufattokhov MukhammadAli. I am a Freelancer Front-end Developer with over 1 years of experience. I am from Uzbekistan. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</p>
+              <p class="about__text">Hi! My name is Abdufattokhov MukhammadAli. I am a Freelancer Front-end Developer
+                with over 1 years of experience. I am from Uzbekistan. I code and create web elements for amazing people
+                around the world. I like work with new people. New people new Experiences.</p>
               <div class="about__links">
                 <a class="about__link" href="#contact">Hire Me</a>
                 <a class="about__cv" href="#">Download CV</a>
@@ -109,9 +113,178 @@
             </div>
           </div>
         </div>
-        
+
       </div>
     </section>
+
+    <!-- PORTFOLIO START -->
+
+    <!-- <section id="portfolio" class="portfolio">
+      <div class="container">
+        <ul class="portfolio__list row">
+          <li class="portfolio__item col-sm-12 col-md-6 col-lg-4">
+            <div class="pp-wrapper">
+              <img src="https://marketifythemes.net/html/aale/img/portfolio/1.jpg" alt="portfolio" class="portfolio__img" width="313" height="313">
+              <div class="portfolio__content">
+                <div class="p-inner-wrapper">
+                  <div class="p-inner">
+                    <img src="https://strend-vue.envytheme.com/_nuxt/img/white-logo.75b255a.png" alt="strend"
+                      width="150" height="39">
+                  </div>
+                  <h4 class="p-inner__name text-center">Strend</h4>
+                  <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
+                    <li class="p-inner__item">
+                      <a class="p-inner__link" href="#">
+                        GitHub
+                      </a>
+                    </li>
+                    <li class="p-inner__item">
+                      <a class="p-inner__link" href="#">
+                        Website
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="portfolio__item col-sm-12 col-md-6 col-lg-4">
+            <div class="pp-wrapper">
+              <img src="https://marketifythemes.net/html/aale/img/portfolio/2.jpg" alt="portfolio" class="portfolio__img" width="313" height="313">
+              <div class="portfolio__content">
+                <div class="p-inner-wrapper text-center">
+                  <div class="p-inner">
+                    <img src="https://up-and-down-aziz-rakhim.netlify.app/images/footer-logo.svg" alt="up"
+                      width="60" height="32">
+                  </div>
+                  <h4 class="p-inner__name text-center">Up and down</h4>
+                  <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
+                    <li class="p-inner__item">
+                      <a class="p-inner__link" href="#">
+                        GitHub
+                      </a>
+                    </li>
+                    <li class="p-inner__item">
+                      <a class="p-inner__link" href="#">
+                        Website
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="portfolio__item col-sm-12 col-md-6 col-lg-4">
+            <div class="pp-wrapper">
+              <img src="https://marketifythemes.net/html/aale/img/portfolio/6.jpg" alt="portfolio" class="portfolio__img" width="313" height="313">
+              <div class="portfolio__content">
+                <div class="p-inner-wrapper text-center">
+                  <div class="p-inner">
+                    <img src="https://bookmark-aziz-rakhim.netlify.app/images/footer-logo.svg" alt="bookmark"
+                      width="148" height="25">
+                  </div>
+                  <h4 class="p-inner__name text-center">Bookmark</h4>
+                  <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
+                    <li class="p-inner__item">
+                      <a class="p-inner__link" href="#">
+                        GitHub
+                      </a>
+                    </li>
+                    <li class="p-inner__item">
+                      <a class="p-inner__link" href="#">
+                        Website
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section> -->
+    <!-- <li class="portfolio__item col-sm-12 col-md-6 col-lg-4">
+              <div class="pp-wrapper">
+                <img src="https://marketifythemes.net/html/aale/img/portfolio/3.jpg" alt="portfolio" class="portfolio__img" width="313" height="313">
+                <div class="portfolio__content">
+                  <div class="p-inner-wrapper text-center">
+                    <div class="p-inner">
+                      <img src="https://coffeeroaster-aziz-rakhim.netlify.app/images/footer-logo.svg" alt="coffeeroaster"width="236" height="26">
+                    </div>
+                    <h4 class="p-inner__name text-center">Coffeeroaster</h4>
+                    <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
+                      <li class="p-inner__item">
+                        <a class="p-inner__link" href="#">
+                          GitHub
+                        </a>
+                      </li>
+                      <li class="p-inner__item">
+                        <a class="p-inner__link" href="#">
+                          Website
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li> -->
+            <!--
+
+                  <li class="portfolio__item">
+                      <img src="https://marketifythemes.net/html/aale/img/portfolio/6.jpg" alt="portfolio" class="portfolio__img" width="313" height="313">
+                      <div class="portfolio__wrapper">
+                          <div class="portfolio__shadow" id="convert">
+                          </div>
+                          <div class="portfolio__content">
+                              <div class="p-inner-wrapper">
+                                  <div class="p-inner">
+                                      <img src="https://coffeeroaster-aziz-rakhim.netlify.app/images/footer-logo.svg" alt="coffeeroaster" width="236" height="26">
+                                  </div>
+                                  <h4 class="p-inner__name text-center">
+                                      Coffeeroaster
+                                  </h4>
+                                  <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
+                                      <li class="p-inner__item">
+                                          <a class="p-inner__link" href="#">
+                                              GitHub
+                                          </a>
+                                      </li>
+                                      <li class="p-inner__item">
+                                          <a class="p-inner__link" href="#">
+                                              Website
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="portfolio__item">
+                      <img src="https://marketifythemes.net/html/aale/img/portfolio/4.jpg" alt="portfolio" class="portfolio__img" width="313" height="313">
+                      <div class="portfolio__wrapper">
+                          <div class="portfolio__shadow" id="convert">
+                          </div>
+                          <div class="portfolio__content">
+                              <div class="p-inner-wrapper">
+                                  <div class="p-inner text-center">
+                                      <img src="https://litho.themezaa.com/wp-content/uploads/2021/01/logo-parrot-green@2x.png" alt="strend" width="111" height="36">
+                                  </div>
+                                  <h4 class="p-inner__name text-center">
+                                      Litho
+                                  </h4>
+                                  <ul class="p-inner__list p-0 m-0 d-flex justify-content-between">
+                                      <li class="p-inner__item">
+                                          <a class="p-inner__link" href="#">
+                                              GitHub
+                                          </a>
+                                      </li>
+                                      <li class="p-inner__item">
+                                          <a class="p-inner__link" href="#">
+                                              Website
+                                          </a>
+                                      </li> -->
+
+    <!-- PORTFOLIO END -->
 
     <section id="portfolio" class="portfolio">
       <div class="container">
@@ -194,7 +367,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> 
 
     <section id="contact" class="contact">
       <div class="container"> 
@@ -271,95 +444,137 @@
     </div>
   </footer>
 
-  <!-- SIDEBAR NAVIGATION -->
-  <section id="sidebar" class="sidebar">
-    <button id="open" class="sidebar__show">
-      <i class='sidebar__open bx bx-arrow-back'></i>
-    </button>
-    <button id="close" class="sidebar__show">
-      <i class='sidebar__close bx bx-arrow-back'></i>
-    </button>
-    <div class="sidebar__content">
-      <div class="sidebar__logo">
-        <a href="#">
-          <img class="sidebar__img" src="imgs/front-end.jpg" alt="front-end">
-        </a>
-        <p class="sidebar__name">Abdufattokhov MukhammadAli</p>
-      </div>
-      <ul class="sidebar__menu">
-        <li class="sidebar__item">
-          <a class="sidebar__link" href="#hero">Home</a>
-        </li>
-        <li class="sidebar__item">
-          <a class="sidebar__link" href="#about">About</a>
-        </li>
-        <li class="sidebar__item">
-          <a class="sidebar__link" href="#skils">Skills</a>
-        </li>
-        <li class="sidebar__item">
-          <a class="sidebar__link" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="sidebar__item">
-          <a class="sidebar__link" href="#contact">Contact</a>
-        </li>
-      </ul>
-      <div class="sidebar__footer">
-        <p class="sidebar__follow">Follow me</p>
-        <ul class="sidebar__list">
-          <li class="sidebar__ikons">
-            <a class="sidebar__link" href="#"><i class='sidebar__ikon bx bxl-facebook'></i></a>
+    <!-- SIDEBAR NAVIGATION -->
+    <section id="sidebar" class="sidebar">
+      <i id="open" class='sidebar__open bx bx-arrow-back'></i>
+      <button id="close" class="sidebar__show">
+        <i class='sidebar__close bx bx-arrow-back'></i>
+      </button>
+      <div class="sidebar__content">
+        <div class="sidebar__logo">
+          <a href="#">
+            <img class="sidebar__img" src="imgs/front-end.jpg" alt="front-end">
+          </a>
+          <p class="sidebar__name">Abdufattokhov MukhammadAli</p>
+        </div>
+        <ul class="sidebar__menu">
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#hero">Home</a>
           </li>
-          <li class="sidebar__ikons">
-            <a class="sidebar__link" href="#"><i class='sidebar__ikon bx bxl-instagram' ></i></a>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#about">About</a>
           </li>
-          <li class="sidebar__ikons">
-            <a class="sidebar__link" href="#"><i class='sidebar__ikon bx bxl-github' ></i></a>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#skils">Skills</a>
           </li>
-          <li class="sidebar__ikons">
-            <a class="sidebar__link" href="#"><i class='sidebar__ikon bx bxl-twitter' ></i></a>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#portfolio">Portfolio</a>
           </li>
-          <li class="sidebar__ikons">
-            <a class="sidebar__link" href="#"><i class='sidebar__ikon bx bxl-telegram' ></i></a>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#contact">Contact</a>
           </li>
         </ul>
-        <p class="sidebar__text">© 2022 All Rights Reserved</p>
+        <div class="sidebar__footer">
+          <p class="sidebar__follow">Follow me</p>
+          <ul class="sidebar__list">
+            <li class="sidebar__ikons">
+              <a class="sidebar__link" href="#"><i class='sidebar__ikon bx bxl-facebook'></i></a>
+            </li>
+            <li class="sidebar__ikons">
+              <a class="sidebar__link" href="#"><i class='sidebar__ikon bx bxl-instagram'></i></a>
+            </li>
+            <li class="sidebar__ikons">
+              <a class="sidebar__link" href="#"><i class='sidebar__ikon bx bxl-github'></i></a>
+            </li>
+            <li class="sidebar__ikons">
+              <a class="sidebar__link" href="#"><i class='sidebar__ikon bx bxl-twitter'></i></a>
+            </li>
+            <li class="sidebar__ikons">
+              <a class="sidebar__link" href="#"><i class='sidebar__ikon bx bxl-telegram'></i></a>
+            </li>
+          </ul>
+          <p class="sidebar__text">© 2022 All Rights Reserved</p>
+        </div>
       </div>
-    </div>
-   </section>
+    </section>
 
-  <a href="#"><i class='up bx bx-chevron-up'></i></a>
-  <script src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="js/particles.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <a href="#"><i id="up" class='up bx bx-chevron-up'></i></a>
+    <script src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <script>
-    ScrollReveal({ 
-      reset: true,
-      distance: '60px',
-      duration: 2500,
-      delay: 400,
-    });
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
+      });
 
-    ScrollReveal().reveal('.header__banner', { delay: 200 });
-    ScrollReveal().reveal('.about__title', { delay: 300 });
-    ScrollReveal().reveal('.about__box', { delay: 400, origin: 'left' });
-    ScrollReveal().reveal('.about__user', { delay: 400, origin: 'right' });
-    ScrollReveal().reveal('.skils__title', { delay: 500, origin: 'top' });
-    ScrollReveal().reveal('.skils__bar', { delay: 600, origin: 'left' });
-    ScrollReveal().reveal('.skils__bar-second', { delay: 600, origin: 'right' });
-    ScrollReveal().reveal('.skils__bar-third', { delay: 600, origin: 'left' });
-    ScrollReveal().reveal('.portfolio__item', { delay: 600, origin: 'left' });
-    ScrollReveal().reveal('.portfolio__desc', { delay: 700, origin: 'top', interval: 200 });
-    ScrollReveal().reveal('.contact__content', { delay: 700, origin: 'bottom' });
-    ScrollReveal().reveal('.contact__form', { delay: 800, origin: 'top' });
-    ScrollReveal().reveal('.footer__desc', { delay: 900, origin: 'bottom' });
-    ScrollReveal().reveal('.footer__item', { delay: 900, origin: 'bottom', interval: 200 });
-    ScrollReveal().reveal('.footer__text', { delay: 900, origin: 'bottom' });
-  </script>
-  
+      ScrollReveal().reveal('.header__banner', {
+        delay: 200
+      });
+      ScrollReveal().reveal('.about__title', {
+        delay: 300
+      });
+      ScrollReveal().reveal('.about__box', {
+        delay: 300,
+        origin: 'left'
+      });
+      ScrollReveal().reveal('.about__user', {
+        delay: 300,
+        origin: 'right'
+      });
+      ScrollReveal().reveal('.skils__title', {
+        delay: 300,
+        origin: 'top'
+      });
+      ScrollReveal().reveal('.skils__bar', {
+        delay: 300,
+        origin: 'left'
+      });
+      ScrollReveal().reveal('.skils__bar-second', {
+        delay: 300,
+        origin: 'right'
+      });
+      ScrollReveal().reveal('.skils__bar-third', {
+        delay: 300,
+        origin: 'left'
+      });
+      ScrollReveal().reveal('.portfolio__item', {
+        delay: 300,
+        origin: 'left'
+      });
+      ScrollReveal().reveal('.portfolio__desc', {
+        delay: 300,
+        origin: 'top'
+      });
+      ScrollReveal().reveal('.contact__content', {
+        delay: 300,
+        origin: 'bottom'
+      });
+      ScrollReveal().reveal('.contact__form', {
+        delay: 300,
+        origin: 'top'
+      });
+      ScrollReveal().reveal('.footer__desc', {
+        delay: 300,
+        origin: 'bottom'
+      });
+      ScrollReveal().reveal('.footer__item', {
+        delay: 300,
+        origin: 'bottom',
+        interval: 200
+      });
+      ScrollReveal().reveal('.footer__text', {
+        delay: 300,
+        origin: 'bottom'
+      });
+    </script>
+
 </body>
 
 </html>
