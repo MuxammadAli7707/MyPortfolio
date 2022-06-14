@@ -429,9 +429,14 @@ span {
   background: rgba(255, 255, 255, 0.705);
   margin-bottom: 25px;
 }
+.skils__bar-fourth {
+  position: relative;
+  background: rgba(255, 255, 255, 0.705);
+  margin-bottom: 25px;
+}
 
 .skils__line {
-  width: 80%;
+  width: 85%;
   height: 5px;
   position: relative;
   transition: ease all 0.55s;
@@ -449,7 +454,7 @@ span {
 }
 
 .skils__line-second {
-  width: 65%;
+  width: 80%;
   height: 5px;
   position: relative;
   transition: ease all 0.55s;
@@ -457,7 +462,15 @@ span {
 }
 
 .skils__line-third {
-  width: 10%;
+  width: 70%;
+  height: 5px;
+  position: relative;
+  transition: ease all 0.55s;
+  background-color: #fa163f;
+}
+
+.skils__line-fourth {
+  width: 60%;
   height: 5px;
   position: relative;
   transition: ease all 0.55s;
@@ -549,8 +562,8 @@ span {
 }
 
 .portfolio__desc {
-  width: 100%;
-  height: auto;
+  width: 345px;
+  height: 250px;
   display: inline-block;
   object-fit: cover;
   border-radius: 6px;

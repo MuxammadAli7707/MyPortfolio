@@ -1,17 +1,7 @@
-/* -----------------------------------------------
-/* Author : Vincent Garreau  - vincentgarreau.com
-/* MIT license: http://opensource.org/licenses/MIT
-/* Demo / Generator : vincentgarreau.com/particles.js
-/* GitHub : github.com/VincentGarreau/particles.js
-/* How to use? : Check the GitHub README
-/* v2.0.0
-/* ----------------------------------------------- */
+let pJS = function(tag_id, params){
 
-var pJS = function(tag_id, params){
+  let canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
 
-  var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
-
-  /* particles.js variables with default values */
   this.pJS = {
     canvas: {
       el: canvas_el,
@@ -180,10 +170,6 @@ var pJS = function(tag_id, params){
 
   };
 
-
-
-  /* ---------- pJS functions - canvas ------------ */
-
   pJS.fn.canvasInit = function(){
     pJS.canvas.ctx = pJS.canvas.el.getContext('2d');
   };
@@ -200,7 +186,7 @@ var pJS = function(tag_id, params){
           pJS.canvas.w = pJS.canvas.el.offsetWidth;
           pJS.canvas.h = pJS.canvas.el.offsetHeight;
 
-          /* resize canvas */
+
           if(pJS.tmp.retina){
             pJS.canvas.w *= pJS.canvas.pxratio;
             pJS.canvas.h *= pJS.canvas.pxratio;
@@ -209,7 +195,6 @@ var pJS = function(tag_id, params){
           pJS.canvas.el.width = pJS.canvas.w;
           pJS.canvas.el.height = pJS.canvas.h;
 
-          /* repaint canvas on anim disabled */
           if(!pJS.particles.move.enable){
             pJS.fn.particlesEmpty();
             pJS.fn.particlesCreate();
@@ -217,7 +202,6 @@ var pJS = function(tag_id, params){
             pJS.fn.vendors.densityAutoParticles();
           }
 
-        /* density particles enabled */
         pJS.fn.vendors.densityAutoParticles();
 
       });
@@ -236,7 +220,6 @@ var pJS = function(tag_id, params){
   };
 
 
-  /* --------- pJS functions - particles ----------- */
 
   pJS.fn.particle = function(color, opacity, position){
 

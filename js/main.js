@@ -15,20 +15,6 @@ elClosemodal.addEventListener('click', function () {
   elbody.classList.remove('left');
 });
 
-var typed = new Typed('#element', {
-    strings: ['Fronted Developer', 'Freelancer', 'Web Designer'],
-    typeSpeed: 40,
-    backSpeed: 30,
-    loop: true,
-});
-
-
-var typed = new Typed('#job', {
-    strings: ['Freelancer', 'Fronted Developer', 'Web Designer'],
-    typeSpeed: 40,
-    backSpeed: 30,
-    loop: true,
-});
 
 let cursor = document.querySelector(".cursor");
 let cursorSpot = document.querySelector(".cursor-spot");
@@ -49,7 +35,6 @@ document.addEventListener("mousemove", function(b){
 
 var topbutton = document.getElementById('up');
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -62,7 +47,6 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
