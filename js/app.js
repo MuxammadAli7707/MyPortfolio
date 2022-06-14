@@ -1,3 +1,18 @@
+var typed = new Typed('#element', {
+  strings: ['Fronted Developer', 'Freelancer', 'Web Designer'],
+  typeSpeed: 40,
+  backSpeed: 30,
+  loop: true,
+});
+
+
+var typed = new Typed('#job', {
+  strings: ['Freelancer', 'Fronted Developer', 'Web Designer'],
+  typeSpeed: 40,
+  backSpeed: 30,
+  loop: true,
+});
+
 particlesJS('particles-js',
   
   {
