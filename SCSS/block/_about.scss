@@ -1,0 +1,148 @@
+#about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-bottom: 120px;
+  z-index: 1000;
+}
+
+.about__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  position: relative;
+  color: #fff;
+  letter-spacing: 3px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  line-height: 1.75rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.about__info {
+  font-family: 'Oswald', sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0.2em 0;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.about__title::before {
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 0;
+  width: 10px;
+  height: 32px;
+  background-color: #fa163f;
+}
+
+.about__text {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #bbb;
+  line-height: 2rem;
+  margin-bottom: 70px;
+}
+
+.about__link {
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 13px 15px;
+  margin-right: 20px;
+  border: 2px solid #fa163f;
+  color: #fff;
+  background-color: #fa163f;
+  transition: all 0.4s linear;
+  border-radius: 6px;
+}
+
+.about__link:hover {
+  color: #fff;
+  background-color: transparent;
+  transition: all 0.4s linear;
+}
+
+.about__cv {
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 13px 15px;
+  border: 2px solid #fa163f;
+  color: #fff;
+  background-color: transparent;
+  transition: all 0.4s linear;
+  border-radius: 6px;
+}
+
+.about__cv:hover {
+  background-color: #fa163f;
+  color: #fff;
+  transition: all 0.4s linear;
+}
+
+.about__links {
+  margin-bottom: 65px;
+}
+
+
+.about__call {
+  padding: 10px 0;
+  background-color: #0c0c0c;
+  border: 1px solid #0c0c0c;
+  border-radius: 6px;
+  transition: all 0.4s linear;
+}
+
+.about__call:hover {
+  transition: all 0.4s linear;
+  border: 1px solid #fa163f;
+}
+
+.about__icon {
+  font-size: 30px;
+  color: #fa163f;
+  margin-bottom: 15px;
+}
+
+.about__phone {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  line-height: 1.75rem;
+  margin: 0;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.about__num {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #bbb;
+  line-height: 2rem;
+  margin: 0;
+}
+
+.about__email {
+  padding: 10px 0;
+  background-color: #0c0c0c;
+  border: 1px solid #0c0c0c;
+  border-radius: 6px;
+  transition: all 0.4s linear;
+}
+
+.about__email:hover {
+  transition: all 0.4s linear;
+  border: 1px solid #fa163f;
+}
+
+.about__user {
+  width: 450px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+

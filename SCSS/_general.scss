@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+
+body {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  transition: all 0.4s linear;
+  overflow-x: hidden;
+}
+
+.left {
+  transition: all 0.4s linear;
+  padding-left: 268px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #fa163f);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #00c6ff);
+}

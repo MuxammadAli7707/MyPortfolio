@@ -1,0 +1,303 @@
+#header {
+  background-image: url('https://amirayhan.github.io/tulsa/images/banner/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000093;
+    z-index: -1;
+  }
+
+  &__banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: $text-color;
+    z-index: 300;
+    position: relative;
+  }
+  &__hello {
+    font-size: 24px;
+    padding-bottom: 20px;
+    line-height: 2.75rem;
+  }
+  
+  &__name {
+    font-family: $font-family;
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-bottom: 10px;
+  }
+  
+  &__info {
+    font-family: $font-family;
+    display: inline-block;
+    font-weight: 700; 
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 0.2em 0;
+  }
+  
+  &__work {
+    font-family: $font-family;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 0.2em 0;
+    margin-bottom: 50px;
+  }
+  
+  &__job {
+    color: $main-color;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 13px 15px;
+    border: 2px solid #fa163f;
+    color: #fff;
+    background-color: #fa163f;
+    transition: all 0.4s linear;
+    border-radius: 6px;
+  }
+  
+  &__link:hover {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fa163f;
+    transition: all 0.4s linear;
+  }
+  
+  &__link:hover~.cursor {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: #fff;
+    opacity: 0.2;
+  }
+  
+  &__link:hover~.cursor__spot {
+    opacity: 0;
+  }
+  
+  &__scroll-down {
+    position: absolute;
+    bottom: 6%;
+  }
+  
+  &__down {
+    width: 13px;
+    height: 13px;
+    display: block;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+    transition: all linear 0.3s;
+  }
+  
+  &__down:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+      transform: rotate(45deg) translate(10px, 10px);
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  &__scroll-down:hover &__down {
+    border-color: #fa163f;
+  }
+}
+
+
+#particles-js {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// .header__banner {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+//   min-height: 100vh;
+//   color: $text-color;
+//   z-index: 300;
+//   position: relative;
+// }
+
+// .header__hello {
+//   font-size: 24px;
+//   padding-bottom: 20px;
+//   line-height: 2.75rem;
+// }
+
+// .header__name {
+//   font-family: $font-family;
+//   font-size: 45px;
+//   font-weight: 700;
+//   padding-bottom: 30px;
+//   text-transform: uppercase;
+//   color: $main-color;
+//   margin-bottom: 10px;
+// }
+
+// .header__info {
+//   font-family: $font-family;
+//   display: inline-block;
+//   font-weight: 700; 
+//   font-size: 20px;
+//   line-height: 1.2;
+//   padding: 0.2em 0;
+// }
+
+// .header__work {
+//   font-family: $font-family;
+//   display: inline-block;
+//   font-weight: 700;
+//   font-size: 20px;
+//   line-height: 1.2;
+//   padding: 0.2em 0;
+//   margin-bottom: 50px;
+// }
+
+// .header__job {
+//   color: $main-color;
+// }
+
+span {
+  color: $main-color;
+}
+
+// .header__link {
+//   text-decoration: none;
+//   font-weight: 600;
+//   letter-spacing: 1px;
+//   padding: 13px 15px;
+//   border: 2px solid #fa163f;
+//   color: #fff;
+//   background-color: #fa163f;
+//   transition: all 0.4s linear;
+//   border-radius: 6px;
+// }
+
+// .header__link:hover {
+//   color: #fff;
+//   background-color: transparent;
+//   border: 2px solid #fa163f;
+//   transition: all 0.4s linear;
+// }
+
+// .header__link:hover~.cursor {
+//   transform: translate(-50%, -50%) scale(1.5);
+//   background-color: #fff;
+//   opacity: 0.2;
+// }
+
+// .header__link:hover~.cursor__spot {
+//   opacity: 0;
+// }
+
+// .header__scroll-down {
+//   position: absolute;
+//   bottom: 6%;
+// }
+
+// .header__down {
+//   width: 13px;
+//   height: 13px;
+//   display: block;
+//   border-right: 2px solid #fff;
+//   border-bottom: 2px solid #fff;
+//   transform: rotate(45deg);
+//   margin: -10px;
+//   animation: animate 2s infinite;
+//   transition: all linear 0.3s;
+// }
+
+// .header__down:nth-child(2) {
+//   animation-delay: -0.2s;
+// }
+
+// @keyframes animate {
+//   0% {
+//     opacity: 0;
+//   }
+
+//   50% {
+//     opacity: 1;
+//     transform: rotate(45deg) translate(10px, 10px);
+//   }
+
+//   100% {
+//     opacity: 0;
+//   }
+// }
+
+// .header__scroll-down:hover .header__down {
+//   border-color: #fa163f;
+// }
+
+.cursor,
+.cursor-spot {
+  position: fixed;
+  top: 50%;
+  left: -100px;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 999;
+  pointer-events: none;
+}
+
+.cursor {
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
+  border: 2px solid #fff;
+  transition: all 0.2s ease-out;
+}
+
+.cursor-spot {
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+}
+
+.hover {
+  background: rgba(255, 255, 255, .1);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  border: none;
+  transform: translateX(-50%) translateY(-50%) scale(2);
+}

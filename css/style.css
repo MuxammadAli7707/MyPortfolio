@@ -97,7 +97,7 @@ html {
 .header__info {
   font-family: 'Oswald', sans-serif;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 700; 
   font-size: 20px;
   line-height: 1.2;
   padding: 0.2em 0;
@@ -220,7 +220,7 @@ span {
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
   border: none;
   transform: translateX(-50%) translateY(-50%) scale(2);
-}
+} */
 
 #about {
   padding-top: 120px;
@@ -395,14 +395,10 @@ span {
   }
 
   .about__email {
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 }
-
-.skils__box {
-  position: relative;
-}
-
 .skils__title {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -411,76 +407,59 @@ span {
   color: #fff;
   margin-bottom: 10px;
 }
-
-.skils__bar {
-  position: relative;
-  background: rgba(255, 255, 255, 0.705);
-  margin-bottom: 25px;
+.skils__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skils__icon {
+  transition: all 0.6s ease;
+}
+.skils__icon:hover {
+  transform: scale(1.1);
+  color: #D84925;
+  transition: all 0.6s ease;
+}
+.css:hover {
+  transform: scale(1.1);
+  color: #1c88c7;
+  transition: all 0.6s ease;
 }
 
-.skils__bar-second {
-  position: relative;
-  background: rgba(255, 255, 255, 0.705);
-  margin-bottom: 25px;
+.js:hover {
+  transform: scale(1.1);
+  color: #f0db4f;
+  transition: all 0.6s ease;
 }
-
-.skils__bar-third {
-  position: relative;
-  background: rgba(255, 255, 255, 0.705);
-  margin-bottom: 25px;
+.react:hover {
+  transition: all 0.6s ease;
+  transform: scale(1.1);
+  color: #61dafb;
 }
-.skils__bar-fourth {
-  position: relative;
-  background: rgba(255, 255, 255, 0.705);
-  margin-bottom: 25px;
+.bootstrap:hover {
+  transition: all 0.6s ease;
+  transform: scale(1.1);
+  color: #563D7C;
 }
-
-.skils__line {
-  width: 85%;
-  height: 5px;
-  position: relative;
-  transition: ease all 0.55s;
-  background-color: #fa163f;
-}
-
-.skils__circle {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #fa163f;
-  position: absolute;
-  right: -1px;
-  top: -5px;
-}
-
-.skils__line-second {
-  width: 80%;
-  height: 5px;
-  position: relative;
-  transition: ease all 0.55s;
-  background-color: #fa163f;
-}
-
-.skils__line-third {
-  width: 70%;
-  height: 5px;
-  position: relative;
-  transition: ease all 0.55s;
-  background-color: #fa163f;
-}
-
-.skils__line-fourth {
-  width: 60%;
-  height: 5px;
-  position: relative;
-  transition: ease all 0.55s;
-  background-color: #fa163f;
-}
-
 #skils {
   padding: 50px 0;
   margin-bottom: 120px;
   background-color: #0c0c0c;
+}
+@media screen and (max-width: 768px) {
+  .skils__icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .skils__icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .portfolio__list {
@@ -559,11 +538,13 @@ span {
   position: relative;
   transition: all linear 0.4s;
   margin-bottom: 30px;
+  width: 345px;
+  height: 250px;
 }
 
 .portfolio__desc {
-  width: 345px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   display: inline-block;
   object-fit: cover;
   border-radius: 6px;
@@ -573,7 +554,7 @@ span {
   position: absolute;
   top: 50%;
   left: 3%;
-  width: 94%;
+  width: 324px;
   height: 40%;
   background-color: #fa163f;
   transform: translateY(-50%);
@@ -614,6 +595,49 @@ span {
 
 #portfolio {
   margin-bottom: 120px;
+}
+
+@media screen and (max-width: 1184px) {
+  .portfolio__imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact__info {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio__imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .portfolio__box {
+    width: 309px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .portfolio__box {
+    width: 291px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .portfolio__box {
+    width: 282px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .portfolio__box {
+    width: 265px;
+  }
 }
 
 .contact__content {
@@ -837,7 +861,7 @@ span {
 
 .sidebar {
   position: fixed;
-  left: -150%;
+  left: -300px;
   top: 0;
   width: 260px;
   height: 100%;
@@ -850,6 +874,7 @@ span {
 
 .sidebar__show {
   border: none;
+  background-color: transparent;
 }
 
 .sidebar__open {
@@ -863,7 +888,7 @@ span {
   font-size: 25px;
   cursor: pointer;
   transform: rotate(180deg);
-  transition: all 0.7s linear;
+  transition: all 0.5s linear;
 }
 
 .sidebar__close {
@@ -988,18 +1013,21 @@ span {
 .hide {
   position: relative;
   left: -40px;
-  transition: all 0.2s linear;
+  transition: all 0.5s linear;
 }
 
 @media screen and (max-width: 576px) {
+  .left {
+    padding-left: 0;
+  }
   .footer__list {
     padding-left: 20px;
   }
 
   .up {
     position: fixed;
-    right: 20px;
-    bottom: 25px;
+    right: 60px;
+    bottom: 35px;
   }
 
   .sidebar__menu {
